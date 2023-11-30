@@ -1,0 +1,65 @@
+title = "Photographer in Berlin"
+languageCode = "en-US"
+copyright = "© Anastasia Karazeeva"
+disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+timeZone = "Europe/Berlin"
+theme = "github.com/nicokaiser/hugo-theme-gallery"
+
+[params]
+  title = "Anastasia Karazeeva"
+  description = "Photographer in Berlin"
+  defaultTheme = "light"
+
+[author]
+  name = "Anastasia Karazeeva"
+
+[outputs]
+  page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[imaging]
+  resampleFilter = "CatmullRom"
+  quality = 75
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.112.0"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/watching/hugo_stats.json"
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "assets/watching/hugo_stats\\.json"
+    target = "styles\\.css"
+  [[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(js)"
+    target = "js"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(.*)$"
+    target = "$1"
+
+[menu]
+[[menu.footer]]
+  name = "Instagram"
+  url = "https://www.instagram.com/stacy_artsoul/"
+  weight = 3
+[[menu.footer]]
+  name = "Facebook"
+  url = "https://www.facebook.com/anastasia.fomenko.33/"
+  weight = 3

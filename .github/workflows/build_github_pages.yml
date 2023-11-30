@@ -1,0 +1,20 @@
+name: Build GitHub Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo
+        run: sudo snap install hugo
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Build Pages
+        run: npm install && make
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: exampleSite/public
