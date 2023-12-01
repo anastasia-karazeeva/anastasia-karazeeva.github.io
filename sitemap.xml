@@ -2,15 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/beauty/</loc>
-  </url><url>
     <loc>/object-shooting/</loc>
-  </url><url>
-    <loc>/portraits/</loc>
   </url><url>
     <loc>/children/</loc>
   </url><url>
+    <loc>/portraits/</loc>
+  </url><url>
+    <loc>/beauty/</loc>
+  </url><url>
     <loc>/fashion/</loc>
+  </url><url>
+    <loc>/street-shooting/</loc>
   </url><url>
     <loc>/creative-shooting/</loc>
   </url><url>
