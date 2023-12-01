@@ -1,5 +1,5 @@
 ---
 title: Object shooting
-description: TODO.
+description:
 weight: 14
 ---

@@ -1,5 +1,5 @@
 ---
 title: Portraits
-description: TODO.
+description:
 weight: 16
 ---
